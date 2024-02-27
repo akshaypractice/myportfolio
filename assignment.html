@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.9">
+    <title>HTML Site Over Image</title>
+    <link rel="stylesheet" href="as.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("https://getwallpapers.com/wallpaper/full/9/3/2/538120.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+         color: black;
+            text-align: center;
+        }
+
+        h1 {
+            color: black;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: black;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        a {
+            background-color: #333333;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: overline;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h1><center>AKSHAY KUMAR TOMAR</center></h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+        <h2><center>About Me</h2>
+        <p><h3> <center>Welcome to my portfolio! I am a passionate web developer with a love for creating beautiful and functional websites.</h3></p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHX-sRZb4fe57Z88YezcXXuNgEdkdY-9juzQ&usqp=CAU" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Description of project 1 goes here.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf5x9m0h1id45Ux-Tg97ThSoYGuLDjz5ZlNw&usqp=CAU" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Description of project 2 goes here.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="3">
+            <div class="error-message" id="name-error"></div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error-message" id="email-error"></div>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required minlength="10"></textarea>
+            <div class="error-message" id="message-error"></div>
+        </div>
+        <button type="submit"> submit</button>
+    </form> 
+</section>       
+
+</body>
+</html>
